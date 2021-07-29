@@ -15,33 +15,57 @@
 <body>
     <header>
         <!-- Honda cbr -->
-        <section style="background-color: #264653;" class="container-fluid">
+        <section style="background-color: #264653;" class="container-fluid mb-5">
+          <!-- navbar -->
           <ul class="nav justify-content-end align-items-center pt-4 mx-3">
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Shop</a>
+              <a class="nav-link text-white" href="#shop">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">News</a>
+              <a class="nav-link text-white" href="#news">News</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn mx-5 btn-color" href="#">Login</a>
-          </li>
-        </ul>
+              <a class="nav-link text-white btn mx-5 btn-color px-4" href="#">Login</a>
+            </li>
+          </ul>
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 col-12 ps-5 text-white">
-                    <small>Computer-controlled digital transistorized with electronic advance</small>
-                    <h1>Honda CBR 300R</h1>
-                    <p class="">Amet minim mollit non deserunt ullamco est sit aliqua <br>
+                <div class="col-lg-6 col-12 px-5 text-white">
+                    <small class="text-gray">Computer-controlled digital transistorized with electronic advance</small>
+                    <h1 class="mt-1">Honda CBR 300R</h1>
+                    <p class="text-gray mt-3">Amet minim mollit non deserunt ullamco est sit aliqua <br>
                          dolor do amet sint. Velit officia consequat duis enim velit <br> mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-color btn-lg mt-2 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     Purchase
+                    </button>
+
+                  <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>hjkjj</h5>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 px-5">
                     <img class="w-100" src="images/header-bike.png" alt="">
                 </div>
             </div>
@@ -49,26 +73,26 @@
     </header>
     <main>
         <!-- Fetured Bikes 2021 -->
-        <section class="container my-5">
+        <section id="shop" class="container my-5">
             <h1 class="text-center">Fetured Bikes 2021</h1>
             <p class="text-center" style="color: red;">Best bike collection</p>
             <div class="row my-5">
-                <div class="col-lg-4 p-5">
-                    <img class="w-100" src="images/grayscale-bike.jpg" alt="">
+                <div class="col-12 col-lg-4 p-5">
+                    <img class="gray-img w-100" src="images/feature-bike.jpg" alt="">
                 </div>
-                <div class="col-lg-4 p-5">
+                <div class="col-12 col-lg-4 p-5">
                     <img class="w-100" src="images/feature-bike.jpg" alt="">
                 </div>
-                <div class="col-lg-4 p-5">
-                    <img class="w-100" src="images/grayscale-bike.jpg" alt="">
+                <div class="col-12 col-lg-4 p-5">
+                    <img class="gray-img w-100" src="images/feature-bike.jpg" alt="">
                 </div>
             </div>
         </section>
         <!-- Latest News -->
-        <section class="container my-5">
+        <section id="news" class="container my-5">
             <h1 class="text-center">latest News</h1>
             <div class="card-group row mt-5">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <div class="card rounded-3 bg-white p-3 m-2">
                         <img height="256px" src="images/bike-1.png" class="card-img-top rounded-3 bg-light" alt="...">
                         <div class="card-body">
@@ -80,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <div class="card rounded-3  bg-white p-3 m-2">
                         <img height="256px" src="images/bike-2.png" class="card-img-top rounded-3 bg-light" alt="...">
                         <div class="card-body">
@@ -92,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <div class="card rounded-3  bg-white p-3 m-2">
                         <img height="256px" src="images/bike-3.png" class="card-img-top rounded-3 bg-light" alt="...">
                         <div class="card-body">
@@ -104,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
         </section>
         <!-- Clients Section -->
         <section class="container my-5">
@@ -176,10 +200,10 @@
         <section class="container my-5">
             <h1 class="text-center">Frequently Asked <span style="color: #E76F51;">Questions</span></h1>
             <div class="row my-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <img class="w-100" src="images/faq.png" alt="">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item border border-1 m-4">
                           <h2 class="accordion-header" id="flush-headingOne">
@@ -256,7 +280,7 @@
               </div>
         </section>
         <!-- Contact Form -->
-        <section style="height: 400px;" class="container my-5 d-flex justify-content-center align-items-center bg-warning">
+        <section id="contact" style="height: 400px;" class="container my-5 d-flex justify-content-center align-items-center bg-warning">
           <div>
             <h1>LET'S STAY IN TOUCH</h1>
             <p>Get updates on sales, specials and more</p>
@@ -266,7 +290,7 @@
         </section>
     </main>
     <footer>
-
+      <p class="text-center">©2021. Bike. All rights reserved. Fawzan, Fantasy Bike.</p>
     </footer>
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
